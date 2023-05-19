@@ -1,30 +1,44 @@
-# Getting Started with Create React App
+## Why iframes for Micro Frontends?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Micro frontends provide a modular and scalable approach to building web applications by breaking them down into smaller, independently deployable units. Using iframes as the integration mechanism for micro frontends offers several advantages:
+
+- **Isolation:** iframes provide a high degree of isolation, allowing micro frontends to run independently without interfering with each other. This isolation helps prevent style and JavaScript conflicts between different micro frontends.
+
+- **Technology Agnostic:** iframes enable the integration of micro frontends developed with different technologies (e.g., Vue, React, Angular) into a single application. Each micro frontend can be built with its preferred framework and still seamlessly integrated into the overall system.
+
+- **Independent Deployment:** Since micro frontends are loaded in iframes, they can be developed, tested, and deployed independently. This enables teams to work autonomously and release updates to their micro frontends without affecting the entire application.
+
+- **Scalability:** iframes allow the application to scale horizontally by distributing different micro frontends across multiple servers or services. Each micro frontend can be hosted and scaled independently, improving performance and resilience.
+
+- **Security:** iframes provide a security boundary between the micro frontends and the host application. This helps mitigate security risks by preventing unauthorized access to sensitive data or interactions between different micro frontends.
+
+Using iframes as the integration mechanism for micro frontends provides a flexible and scalable architecture, enabling teams to build and maintain complex applications composed of independently developed and deployed components.
+
+
+- Node.js version: v16.13.0
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `cd microfrontend-service`
 
-### `npm start`
+### `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installs dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `npm run dev`
 
-### `npm test`
+Lunches the dev server for the microfrontend service to http://127.0.0.1:5173/
+### `open a new terminal`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `cd container-service`
 
-### `npm run build`
+### `npm install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Installs dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Lunches the dev server for the container service  to http://localhost:3000/
+
+
+
