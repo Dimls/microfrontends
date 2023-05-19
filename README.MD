@@ -15,9 +15,9 @@ Micro frontends provide a modular and scalable approach to building web applicat
 Using iframes as the integration mechanism for micro frontends provides a flexible and scalable architecture, enabling teams to build and maintain complex applications composed of independently developed and deployed components.
 
 
-- Node.js version: v16.13.0
+## Installation Guide
 
-## Available Scripts
+- Node.js version: v16.13.0
 
 ### `cd microfrontend-service`
 
